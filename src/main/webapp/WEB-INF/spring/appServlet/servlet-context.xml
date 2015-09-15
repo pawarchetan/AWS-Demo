@@ -16,13 +16,12 @@
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/MyGlamm"/>
-        <property name="username" value="goeuro"/>
-        <property name="password" value="IaxE_zSguULyRVw"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/Lendbox"/>
+        <property name="username" value="dummy"/>
+        <property name="password" value="/>
     </bean>
 
-    <bean id="sessionFactory"
-          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="annotatedClasses">
             <list>
